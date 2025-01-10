@@ -88,13 +88,13 @@ sudo ./09-create-root-user-v2.sh worker4 awe1233401212 jnrowe
 ## Script 16 - Root user v2 (with omyzsh)
 
 ```bash
-chmod +x ./16-create-root-user-v2.sh && \
-sudo ./16-create-root-user-v2.sh masterK a amuse && \
-sudo ./16-create-root-user-v2.sh worker1 a half-life && \
-sudo ./16-create-root-user-v2.sh worker2 a josh && \
-sudo ./16-create-root-user-v2.sh worker3 a dirty && \
-sudo ./16-create-root-user-v2.sh worker4 a jnrowe && \
-sudo ./16-create-root-user-v2.sh test1 a dst
+chmod +x ./09-create-root-user-v2.sh && \
+sudo ./09-create-root-user-v2.sh masterK awe1233401212 amuse && \
+sudo ./09-create-root-user-v2.sh worker1 awe1233401212 half-life && \
+sudo ./09-create-root-user-v2.sh worker2 awe1233401212 josh && \
+sudo ./09-create-root-user-v2.sh worker3 awe1233401212 dirty && \
+sudo ./09-create-root-user-v2.sh worker4 awe1233401212 jnrowe && \
+sudo ./09-create-root-user-v2.sh test1 awe1233401212 dst
 
 ```
 ## List available Users
@@ -105,37 +105,21 @@ cut -d: -f1 /etc/passwd
 getent group sudo
 ```
 
-## To run `08-auto-purge.sh`
+## To run `07-auto-purge.sh`
 
 ```bash
-chmod +x ./08-auto-purge.sh && \
-sudo ./08-auto-purge.sh
-```
-
-## To run `09-kube-install-csa-kuril-v3.sh`
-
-```bash
-chmod +x ./09-kube-install-csa-kuril-v3.sh && \
-sudo ./09-kube-install-csa-kuril-v3.sh <host-name optional>
+chmod +x ./07-auto-purge.sh && \
+sudo ./07-auto-purge.sh
 ```
 
 ### `masterK` hostname
 
-```bash
-chmod +x ./09-kube-install-csa-kuril-v3.sh && \
-sudo ./09-kube-install-csa-kuril-v3.sh masterK
-```
 
 ```bash
 hostnamectl set-hostname masterK
 ```
 
 ### `worker1` hostname
-
-```bash
-chmod +x ./09-kube-install-csa-kuril-v3.sh && \
-sudo ./09-kube-install-csa-kuril-v3.sh worker1
-```
 
 ```bash
 hostnamectl set-hostname worker1
@@ -165,24 +149,24 @@ sudo ./10-kube-init.sh
 ## Change ZSH Theme
 
 ```bash
-chmod +x ./12-zsh-theme-change-v2.sh && \
-sudo ./12-zsh-theme-change-v2.sh {theme-name} {true / false -- append zshrc}
+chmod +x ./01-zsh-theme-change-v2.sh && \
+sudo ./01-zsh-theme-change-v2.sh {theme-name} {true / false -- append zshrc}
 ```
 
 ```bash
-chmod +x ./12-zsh-theme-change-v2.sh && \
-sudo ./12-zsh-theme-change-v2.sh half-life
+chmod +x ./01-zsh-theme-change-v2.sh && \
+sudo ./01-zsh-theme-change-v2.sh half-life
 ```
 
 ## 17 Repo Permission
 
 ```bash
-sudo chmod +x 17-repo-permissions.sh && \
-./17-repo-permissions.sh
+sudo chmod +x 09-repo-permissions.sh && \
+./09-repo-permissions.sh
 ```
 ## 18 Git Pull
 
 ```bash
-sudo chmod +x 18-git-pull.sh && \
-./18-git-pull.sh
+sudo chmod +x 10-git-pull.sh && \
+./10-git-pull.sh
 ```

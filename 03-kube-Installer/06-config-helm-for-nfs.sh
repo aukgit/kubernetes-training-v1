@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "$PWD/../base-shell-scripts/00-import-all.sh"
+source "$PWD/../01-base-shell-scripts/00-import-all.sh"
 
 main() {
     local ip=$(get_control_ip)

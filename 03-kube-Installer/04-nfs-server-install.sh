@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source the log function from the external file
-source "$PWD/../base-shell-scripts/00-import-all.sh"
+source "$PWD/../01-base-shell-scripts/00-import-all.sh"
 
 main() {
     local nodes=($(kubectl get nodes -o jsonpath='{range .items[*]}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}{end}'))

@@ -5,7 +5,7 @@
 # source "$PWD/../base-shell-scripts/02-install-apt.sh"
 # source "$PWD/../base-shell-scripts/03-aria2c-download.sh"
 # source "$PWD/../base-shell-scripts/04-is-package-installed.sh"
-source "$PWD/../base-shell-scripts/00-import-all.sh"
+source "$PWD/../01-base-shell-scripts/00-import-all.sh"
 
 # Function to download Helm based on specified version
 download_helm() {
