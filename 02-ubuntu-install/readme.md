@@ -1,0 +1,188 @@
+# Ubuntu Scripts
+
+## `01-set-ip.sh`
+
+`Failed to restart kube-apiserver.service: Unit kube-apiserver.service not found.`
+
+```bash
+ chmod +x ./01-set-ip.sh && \
+ sudo ./01-set-ip.sh <ip> <route ip optinal / 192.168.0.1>
+ ```
+
+```bash
+ chmod +x ./01-set-ip.sh && \
+ sudo ./01-set-ip.sh 192.168.0.66
+ ```
+
+```bash
+ chmod +x ./01-set-ip.sh && \
+ sudo ./01-set-ip.sh 192.168.0.67
+ ```
+
+```bash
+chmod +x ./01-set-ip.sh && \
+sudo ./01-set-ip.sh 192.168.0.68
+```
+
+## `05-remove-used-ports.sh`
+
+`Failed to restart kube-apiserver.service: Unit kube-apiserver.service not found.`
+
+```bash
+ chmod +x ./05-remove-used-ports.sh && \
+ sudo ./05-remove-used-ports.sh 
+ ```
+
+## To run `04-kill-user-processes.sh`
+
+```bash
+chmod +x 04-kill-user-processes.sh && \
+./04-kill-user-processes.sh <username>
+```
+
+```bash
+chmod +x ./04-kill-user-processes.sh && \
+./04-kill-user-processes.sh kube
+```
+
+## To run `09-create-root-user-v2.sh`
+
+```bash
+chmod +x 09-create-root-user-v2.sh && \
+./09-create-root-user-v2.sh <new-username> <password> <homedir>
+```
+
+```bash
+chmod +x ./09-create-root-user-v2.sh && \
+./09-create-root-user-v2.sh masterK awe1233401212
+```
+
+```bash
+chmod +x ./09-create-root-user-v2.sh && \
+./09-create-root-user-v2.sh worker1 awe1233401212
+```
+
+```bash
+chmod +x ./09-create-root-user-v2.sh && \
+./09-create-root-user-v2.sh worker2 awe1233401212
+```
+
+```bash
+chmod +x ./09-create-root-user-v2.sh && \
+./09-create-root-user-v2.sh masterK awe1233401212 amuse && \
+./09-create-root-user-v2.sh worker1 awe1233401212 half-life && \
+./09-create-root-user-v2.sh worker2 awe1233401212 josh && \
+./09-create-root-user-v2.sh worker3 awe1233401212 dirty && \
+./09-create-root-user-v2.sh worker4 awe1233401212 jnrowe
+```
+
+```bash
+chmod +x ./09-create-root-user-v2.sh && \
+sudo ./09-create-root-user-v2.sh masterK awe1233401212 amuse && \
+sudo ./09-create-root-user-v2.sh worker1 awe1233401212 half-life && \
+sudo ./09-create-root-user-v2.sh worker2 awe1233401212 josh && \
+sudo ./09-create-root-user-v2.sh worker3 awe1233401212 dirty && \
+sudo ./09-create-root-user-v2.sh worker4 awe1233401212 jnrowe
+```
+
+## Script 16 - Root user v2 (with omyzsh)
+
+```bash
+chmod +x ./16-create-root-user-v2.sh && \
+sudo ./16-create-root-user-v2.sh masterK a amuse && \
+sudo ./16-create-root-user-v2.sh worker1 a half-life && \
+sudo ./16-create-root-user-v2.sh worker2 a josh && \
+sudo ./16-create-root-user-v2.sh worker3 a dirty && \
+sudo ./16-create-root-user-v2.sh worker4 a jnrowe && \
+sudo ./16-create-root-user-v2.sh test1 a dst
+
+```
+## List available Users
+
+```bash
+cat /etc/passwd
+cut -d: -f1 /etc/passwd
+getent group sudo
+```
+
+## To run `08-auto-purge.sh`
+
+```bash
+chmod +x ./08-auto-purge.sh && \
+sudo ./08-auto-purge.sh
+```
+
+## To run `09-kube-install-csa-kuril-v3.sh`
+
+```bash
+chmod +x ./09-kube-install-csa-kuril-v3.sh && \
+sudo ./09-kube-install-csa-kuril-v3.sh <host-name optional>
+```
+
+### `masterK` hostname
+
+```bash
+chmod +x ./09-kube-install-csa-kuril-v3.sh && \
+sudo ./09-kube-install-csa-kuril-v3.sh masterK
+```
+
+```bash
+hostnamectl set-hostname masterK
+```
+
+### `worker1` hostname
+
+```bash
+chmod +x ./09-kube-install-csa-kuril-v3.sh && \
+sudo ./09-kube-install-csa-kuril-v3.sh worker1
+```
+
+```bash
+hostnamectl set-hostname worker1
+```
+
+### `worker2` hostname
+
+```bash
+chmod +x ./09-kube-install-csa-kuril-v3.sh && \
+sudo ./09-kube-install-csa-kuril-v3.sh worker2
+```
+
+```bash
+hostnamectl set-hostname worker2
+```
+
+
+## Once install is done do `kubeadam init` from only the master node
+
+### ⚠️ ! From Master Node Only run the below script
+
+```bash
+chmod +x ./10-kube-init.sh && \
+sudo ./10-kube-init.sh
+```
+
+## Change ZSH Theme
+
+```bash
+chmod +x ./12-zsh-theme-change-v2.sh && \
+sudo ./12-zsh-theme-change-v2.sh {theme-name} {true / false -- append zshrc}
+```
+
+```bash
+chmod +x ./12-zsh-theme-change-v2.sh && \
+sudo ./12-zsh-theme-change-v2.sh half-life
+```
+
+## 17 Repo Permission
+
+```bash
+sudo chmod +x 17-repo-permissions.sh && \
+./17-repo-permissions.sh
+```
+## 18 Git Pull
+
+```bash
+sudo chmod +x 18-git-pull.sh && \
+./18-git-pull.sh
+```
