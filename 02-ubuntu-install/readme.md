@@ -45,6 +45,28 @@ chmod +x ./04-kill-user-processes.sh && \
 ./04-kill-user-processes.sh kube
 ```
 
+## To run `05-omy-zsh-only.sh`
+
+```bash
+chmod +x ./05-omy-zsh-only.sh && \
+./05-omy-zsh-only.sh <Theme> <is_apped_zsh:yes>
+./05-omy-zsh-only.sh robbyrussell
+./05-omy-zsh-only.sh amuse
+./05-omy-zsh-only.sh dst
+```
+
+
+## To run `01-zsh-theme-change-v2.sh`
+
+```bash
+chmod +x ./01-zsh-theme-change-v2.sh && \
+./01-zsh-theme-change-v2.sh <Theme> <is_apped_zsh:yes>
+./01-zsh-theme-change-v2.sh -h
+./01-zsh-theme-change-v2.sh robbyrussell
+./01-zsh-theme-change-v2.sh amuse
+./01-zsh-theme-change-v2.sh dst
+```
+
 ## To run `09-create-root-user-v2.sh`
 
 ```bash
