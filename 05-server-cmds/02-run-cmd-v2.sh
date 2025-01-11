@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "$PWD/../base-shell-scripts/00-import-all.sh"
+source "$PWD/../01-base-shell-scripts/00-import-all.sh"
 
 show_help() {
     echo "Md Alim Ul Karim"
