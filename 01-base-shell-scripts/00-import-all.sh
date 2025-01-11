@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory containing shell files to be sourced
-SHELL_DIR="$PWD/../base-shell-scripts"
+SHELL_DIR="$PWD/../01-base-shell-scripts"
 CURRENT_FILENAME="00-import-all.sh"
 EXCLUDE_FILES=("01-logger.sh" "$CURRENT_FILENAME")
 # Source the logger file first

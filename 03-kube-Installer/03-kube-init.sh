@@ -2,7 +2,9 @@
 
 # Exit on error
 set -e
-
+echo "Md Alim Ul Karim"
+echo "https://alimkarim.com | https://riseup-pro.com"
+echo
 echo "========== before joining worker node run crio services start and enable ==========="
 echo "sudo systemctl enable crio.service && sudo systemctl start crio.service"
 echo "=================== (run from sudo su - user only) initializing kubeadam init =============================================="
