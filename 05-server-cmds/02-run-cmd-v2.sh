@@ -3,6 +3,9 @@
 source "$PWD/../base-shell-scripts/00-import-all.sh"
 
 show_help() {
+    echo "Md Alim Ul Karim"
+    echo "https://alimkarim.com | https://riseup-pro.com"
+    echo
     echo "Usage:"
     echo "  $0 all|control|workers|worker-1|worker-2|worker-3 <shell_command> [yes|true|no|false]"
     echo

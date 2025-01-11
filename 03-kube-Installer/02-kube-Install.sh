@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Md Alim Ul Karim"
+echo "https://alimkarim.com | https://riseup-pro.com"
+echo
+
 # Function to configure Kubernetes and optionally change hostname
 configure_k8s() {
     local new_hostname=$1
