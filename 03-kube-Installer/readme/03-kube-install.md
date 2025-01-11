@@ -46,10 +46,11 @@ sudo sysctl -w net.ipv4.ip_forward=1
 
 ### Set IP
 
+Set IP using /02-ubuntu-install/00-set-ip.sh
+
 ```bash
-sudo mkdir -p /etc/netplan && \
-sudo touch /etc/netplan/00-installer-config.yaml && \
-sudo vim /etc/netplan/00-installer-config.yaml
+sudo /02-ubuntu-install/00-set-ip.sh (your Ip) [your default gateway]
+sudo /02-ubuntu-install/00-set-ip.sh 192.168.0.85
 ```
 
 #### This is the network config written by 'subiquity'
